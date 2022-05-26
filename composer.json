@@ -45,7 +45,7 @@
     "include-path": [
         "./"
     ],
-    "license": "BSD License",
+    "license": "BSD-2-Clause",
     "name": "jeremib/pear_date",
     "support": {
         "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=Date",
