@@ -315,7 +315,7 @@ class Date_TimeZone
      * @access   public
      * @see      Date::setTZ(), Date::setTZByID(), Date_TimeZone::isValidID()
      */
-    static function Date_TimeZone($ps_id)
+    public function Date_TimeZone($ps_id)
     {
         $_DATE_TIMEZONE_DATA =& $GLOBALS['_DATE_TIMEZONE_DATA'];
 
