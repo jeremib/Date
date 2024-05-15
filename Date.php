@@ -4571,7 +4571,7 @@ class Date
      * @see      Date_TimeZone::isEquivalent()
      * @since    Method available since Release 1.5.0
      */
-    function inEquivalentTimeZones($po_date1, $po_date2)
+    static function inEquivalentTimeZones($po_date1, $po_date2)
     {
         return $po_date1->tz->isEquivalent($po_date2->getTZID());
     }
@@ -4593,7 +4593,7 @@ class Date
      * @access   public
      * @static
      */
-    function compare($od1, $od2)
+    static function compare($od1, $od2)
     {
         $d1 = new Date($od1);
         $d2 = new Date($od2);
@@ -5455,7 +5455,7 @@ class Date
      * @static
      * @since    Method available since Release 1.5.0
      */
-    function _addOffset($pn_offset,
+    static function _addOffset($pn_offset,
                         $pn_day,
                         $pn_month,
                         $pn_year,

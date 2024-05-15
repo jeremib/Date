@@ -80,7 +80,7 @@ class Date_Human
      * Returns an associative array containing the converted date information
      * in 'Human Calendar' format.
      *
-     * If the day is New Years Day, the function will return
+     * If the day is New Years Day, the static function will return
      * "hdom" =>  0
      * "hdow" =>  0
      * "hwom" =>  0
@@ -103,7 +103,7 @@ class Date_Human
      * @access   public
      * @static
      */
-    function gregorianToHuman($day = 0, $month = 0, $year = 0)
+    static function gregorianToHuman($day = 0, $month = 0, $year = 0)
     {
         /*
          * Check to see if any of the arguments are empty
@@ -197,7 +197,7 @@ class Date_Human
      * @access   public
      * @static
      */
-    function humanToGregorian($day, $month, $year = 0)
+    static function humanToGregorian($day, $month, $year = 0)
     {
         /*
          * Check to see if the year has been passed through.
@@ -219,7 +219,7 @@ class Date_Human
          */
         $DayOfYear++;
         /*
-         * the mktime() function will correctly calculate the date for out of
+         * the mktime() static function will correctly calculate the date for out of
          * range values, so putting $DayOfYear instead of the day of the month
          * will work fine.
          */

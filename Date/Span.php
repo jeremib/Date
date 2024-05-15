@@ -1047,7 +1047,7 @@ class Date_Span
      * @access   public
      * @static
      */
-    function compare($time1, $time2)
+    static function compare($time1, $time2)
     {
         if ($time1->equal($time2)) {
             return 0;
@@ -1087,7 +1087,7 @@ class Date_Span
      * @static
      * @see      Date_Span::getDefaultInputFormat(), Date_Span::setDefaultFormat()
      */
-    function setDefaultInputFormat($format)
+    static function setDefaultInputFormat($format)
     {
         $old = $GLOBALS['_DATE_SPAN_INPUT_FORMAT'];
         $GLOBALS['_DATE_SPAN_INPUT_FORMAT'] = $format;
@@ -1106,7 +1106,7 @@ class Date_Span
      * @static
      * @see      Date_Span::setDefaultInputFormat(), Date_Span::getDefaultFormat()
      */
-    function getDefaultInputFormat()
+    static function getDefaultInputFormat()
     {
         return $GLOBALS['_DATE_SPAN_INPUT_FORMAT'];
     }
@@ -1125,7 +1125,7 @@ class Date_Span
      * @static
      * @see      Date_Span::getDefaultFormat(), Date_Span::setDefaultInputFormat()
      */
-    function setDefaultFormat($format)
+    static function setDefaultFormat($format)
     {
         $old = $GLOBALS['_DATE_SPAN_FORMAT'];
         $GLOBALS['_DATE_SPAN_FORMAT'] = $format;
@@ -1144,7 +1144,7 @@ class Date_Span
      * @static
      * @see      Date_Span::setDefaultFormat(), Date_Span::getDefaultInputFormat()
      */
-    function getDefaultFormat()
+    static function getDefaultFormat()
     {
         return $GLOBALS['_DATE_SPAN_FORMAT'];
     }
